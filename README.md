@@ -12,6 +12,8 @@
 
 使用Adam优化器，利用mpl_toolkits.mplot3d中的Axes3D实现3D可视化展示。
 
+<img src=".\fig\Himmelblau.png" alt="Himmelblau" style="zoom:72%;" />
+
 ## 4. 图像分类
 
 使用Lenet-5网络，实现对cifar10数据集的预测。
@@ -24,13 +26,13 @@
 
 使用RNN实现时间序列预测。
 
-<img src="C:\Users\liyanqi\Desktop\pytorchs\fig\Figure_1.png" alt="Figure_1" style="zoom:72%;" />
+<img src=".\fig\Figure_1.png" alt="Figure_1" style="zoom:72%;" />
 
 ## 7. 长短期记忆循环神经网络（LSTM）
 
 使用LSTM实现时间序列预测。
 
-<img src="C:\Users\liyanqi\Desktop\pytorchs\fig\Figure_2.png" alt="Figure_2" style="zoom:72%;" />
+<img src=".\fig\Figure_2.png" alt="Figure_2" style="zoom:72%;" />
 
 ## 8. 综合项目
 
@@ -43,10 +45,10 @@
 ```
 project-name/
 │
-├── model/ 						# store best model
+├── model/ 						# Store best model
 │   └── best_model.pth
 │
-├── pokemon/					# dataset
+├── pokemon/					# Dataset
 │   ├── bulbasaur
 │   │   └── *.jpg/png/jpeg/...
 │   ├── charmander/
@@ -59,8 +61,10 @@ project-name/
 │   │	└── *.jpg/png/jpeg/...
 │	└──	images.csv				# Retrieval table for images
 │
-└── dir3/
-    ├── file4.ext
-    └── file5.ext
+├── pokemon.py 					# Dataset loader and generate retrieval table
+├── resnet.py					# Resnet-18 model
+├── test.py						# Use best model to predict
+├── train.py					# Train and save model
+└── utils.py					# Tools
 ```
 
