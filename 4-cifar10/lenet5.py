@@ -70,5 +70,5 @@ def main():
     out = net(tmp)
     print("conv out shape: ", out.shape)
         
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
